@@ -10,6 +10,7 @@
   background-color: black;
   grid-template-columns: 1fr 3fr;
   .logo {
+    margin-left: 10px;
     width: 235px;
     height: 70px;
     img {
@@ -80,9 +81,11 @@
 }
 .section2 {
   // padding: 50px 30px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  display: grid;
+  justify-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  grid-template-columns: 1fr;
   gap: 15px;
   padding: 30px 0;
   background: #1a1825;
@@ -94,7 +97,7 @@
     display: flex;
     height: 340px;
 
-    justify-items: flex-end;
+    // justify-items: flex-end;
     .img {
       width: 454px;
       // display: flex;
@@ -217,7 +220,7 @@
     }
   }
 }
-.section4{
+.section4 {
   padding: 10px 5px;
 
   background-color: #5b568e;
@@ -235,35 +238,35 @@
     // border: 0.5px solid black;
     border-radius: 10px;
     height: 500px;
-    background: white ;
+    background: white;
     padding: 20px;
     display: grid;
     box-shadow: #1a1825;
     justify-content: center;
-    .img{
+    .img {
       width: 200px;
       height: 100px;
-      img{
+      img {
         max-width: 100%;
         height: auto;
         object-fit: cover;
       }
     }
-    .text{
+    .text {
       padding-top: 80px;
       text-align: center;
-      color:#1F3790 ;
-      h3{
+      color: #1f3790;
+      h3 {
         font-size: 38px;
       }
-      p{
+      p {
         width: 200px;
         font-size: 24px;
         word-wrap: break-word;
         margin: 10px 0;
       }
-      button{
-        background-color: #1F3790;
+      button {
+        background-color: #1f3790;
         padding: 10px 15px;
         color: white;
         margin: 15px 10px;
@@ -273,31 +276,31 @@
       }
     }
   }
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer {
+  text-align: center;
+  background-color: #1a1825;
+  color: white;
+  padding: 40px 0 20px 0;
+  font-family: sans-serif;
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    margin: 15px;
+    font-size: 17px;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .header {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr;
     justify-items: center;
-
+    .logo {
+      margin-left: 0;
+    }
     .nav {
       justify-content: center;
       flex-direction: column;
@@ -325,5 +328,9 @@
   .section3 {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+  .section5 {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

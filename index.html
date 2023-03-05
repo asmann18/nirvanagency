@@ -115,7 +115,7 @@
         </div>
         <form class="part2" onsubmit="return false">
           <div class="adsoyad">
-            <label for="adsoyad" class="input1">Ad, Soyad*</label>
+            <label for="adsoyad" class="adsoyad_input">Ad, Soyad*</label>
             <input
               type="text"
               name="adsoyad"
@@ -125,7 +125,7 @@
             />
           </div>
           <div class="email">
-            <label for="email" class="input2">E-poçt*</label>
+            <label for="email" class="email_input">E-poçt*</label>
             <input
               type="email"
               name="email"
@@ -140,6 +140,7 @@
             <input
               type="tel"
               name="telefon"
+              class="telefon_input"
               placeholder="Telefon nömrəniz"
               id="telefon"
               required
@@ -149,6 +150,7 @@
           <div class="movzu">
             <label for="movzu">Mövzu</label>
             <input
+              class="movzu_input"
               type="text"
               name="movzu"
               placeholder="Mövzuyu yazın"
@@ -158,6 +160,7 @@
           <div class="mesaj">
             <label for="mesaj">Mesaj</label>
             <input
+              class="mesaj_input"
               name="mesaj"
               id="mesaj"
               placeholder="Mesajınız..."
@@ -221,5 +224,22 @@
         </div>
       </div>
     </main>
+    <footer class="footer">
+      <h3>Nirvana Agency</h3>
+      <p>nirvanagencyaz@gmail.com</p>
+      <div class="a">
+        <a href="https://www.instagram.com/nirvanagency.az/"
+          ><img src="./img/alt_text_label_Instagram.png" alt=""
+        /></a>
+        <a
+          href="https://www.facebook.com/people/Nirvana-Agency/100090683533383/"
+          ><img src="./img/alt_text_label_Facebook.png" alt=""
+        /></a>
+      </div>
+      <p>©2023, Nirvana Agency.</p>
+    </footer>
   </body>
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+  <script src="main.js"></script>
 </html>
