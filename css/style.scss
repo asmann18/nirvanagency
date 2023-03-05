@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  // font-family: 'Montserrat', sans-serif;
+// font-family: 'Roboto', sans-serif;
 }
 .header {
   padding: 20px 10px;
@@ -100,13 +102,18 @@
     // justify-items: flex-end;
     .img {
       width: 454px;
+      height: 340px;
       // display: flex;
       // margin-left: 20px;
       // justify-content: flex-end;
       img {
         max-width: 100%;
-        height: auto;
+        height: 341px;
+        object-fit: cover;
       }
+    }
+    .aaa{
+      width: 450px;
     }
     .text {
       background: #7772ab;
@@ -227,25 +234,30 @@
 }
 .section5 {
   background-color: #5b568e;
-
+  height: 100vh;
   padding: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   // gap: 15px;
   justify-items: center;
   .box {
-    width: 300px;
+    width: 450px;
     // border: 0.5px solid black;
     border-radius: 10px;
-    height: 500px;
+    height: 750px;
     background: white;
     padding: 20px;
     display: grid;
     box-shadow: #1a1825;
     justify-content: center;
+    justify-items: center;
+    position: relative; 
     .img {
-      width: 200px;
-      height: 100px;
+      width: 130px;
+      height: 200px;
+      // display: grid;
+      // text-align: center;
+      // justify-items: center;
       img {
         max-width: 100%;
         height: auto;
@@ -253,27 +265,62 @@
       }
     }
     .text {
-      padding-top: 80px;
+      word-wrap: break-word;
+      // padding-top: 80px;
       text-align: center;
       color: #1f3790;
+      position: absolute;
+      top: 250px;
       h3 {
         font-size: 38px;
       }
       p {
-        width: 200px;
-        font-size: 24px;
+        text-align: left;
+        width: 400px;
+        height: auto;
+        font-weight: 800;
+        font-size: 20px;
         word-wrap: break-word;
         margin: 10px 0;
+        line-height: 30px;
+        direction: ltr;
       }
-      button {
-        background-color: #1f3790;
-        padding: 10px 15px;
-        color: white;
-        margin: 15px 10px;
-        border: none;
-        width: 200px;
-        border-radius: 7px;
-      }
+    }
+  }
+  .basic {
+    .text {
+      color: #583a2b;
+    }
+  }
+  .standart {
+    .text {
+      color: #777676;
+    }
+  }
+  .premium {
+    .text {
+      color: #d2b551;
+    }
+  }
+  .btn_a {
+    button {
+      background-color: #1f3790;
+      padding: 10px 15px;
+      color: white;
+      margin: 20px 10px;
+      border: none;
+      width: 480px;
+      border-radius: 7px;
+      font-size: 20px;
+    }
+    .basic {
+      background-color: #583a2b;
+    }
+    .standart {
+      background-color: #777676;
+    }
+    .premium {
+      background-color: #d2b551;
     }
   }
 }
