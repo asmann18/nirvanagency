@@ -81,6 +81,8 @@
 .section2 {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 15px;
   padding: 30px 0;
   background: #1a1825;
   width: 100%;
@@ -204,17 +206,60 @@
   border: none;
 }
 
+.section4 {
+  padding: 10px 5px;
+  background-color: #5b568e;
+}
+
 .section5 {
-  background-color: #8883c4;
-  padding: 30px;
+  background-color: #5b568e;
+  padding: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
 .section5 .box {
-  width: 340px;
-  border: 0.5px solid black;
+  width: 300px;
+  border-radius: 10px;
   height: 500px;
+  background: white;
+  padding: 20px;
+  display: grid;
+  box-shadow: #1a1825;
+  justify-content: center;
+}
+.section5 .box .img {
+  width: 200px;
+  height: 100px;
+}
+.section5 .box .img img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section5 .box .text {
+  padding-top: 80px;
+  text-align: center;
+  color: #1F3790;
+}
+.section5 .box .text h3 {
+  font-size: 38px;
+}
+.section5 .box .text p {
+  width: 200px;
+  font-size: 24px;
+  word-wrap: break-word;
+  margin: 10px 0;
+}
+.section5 .box .text button {
+  background-color: #1F3790;
+  padding: 10px 15px;
+  color: white;
+  margin: 15px 10px;
+  border: none;
+  width: 200px;
+  border-radius: 7px;
 }
 
 @media only screen and (max-width: 600px) {
